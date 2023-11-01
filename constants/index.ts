@@ -1,7 +1,7 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: '/', key: 'home', label: 'Início' },
-  { href: '/', key: 'how_feriasindo_work', label: 'Como o feriasindo funciona?' },
+  { href: '/', key: 'how_feriasindo_work', label: 'Como o FériasIndo funciona?' },
   { href: '/', key: 'services', label: 'Serviços' },
   { href: '/', key: 'pricing ', label: 'Preços' },
   { href: '/', key: 'contact_us', label: 'Contato' },
@@ -62,7 +62,7 @@ export const FOOTER_LINKS = [
   },
   {
     title: 'Nossa Comunidade',
-    links: ['Climbing xixixi', 'Hiking feriasindo', 'Feriasindo kinthill'],
+    links: ['Escalando DTXFDTX', 'Velejando feriasindo', 'Feriasindo montanha'],
   },
 ];
 
@@ -84,3 +84,4 @@ export const SOCIALS = {
     '/wordpress.svg',
   ],
 };
+// Stopped at 21:49
