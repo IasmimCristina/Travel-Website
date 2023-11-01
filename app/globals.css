@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -15,28 +15,28 @@ body {
 }
 
 @layer utilities {
-  .btn_white { 
-    @apply  border-white bg-white px-8 py-3 text-yellow-50
+  .btn_white {
+    @apply border-white bg-white px-8 py-3 text-yellow-50;
   }
-  .btn_white_text  { 
-    @apply  border-white bg-white px-8 py-3 text-gray-90
+  .btn_white_text {
+    @apply border-white bg-white px-8 py-3 text-gray-90;
   }
-  .btn_yellow  { 
-    @apply  border-yellow-50 bg-yellow-50 px-8 py-5 text-white
+  .btn_yellow {
+    @apply border-yellow-50 bg-yellow-50 px-8 py-5 text-white;
   }
-  .btn_dark_yellow { 
-    @apply  bg-yellow-90 px-8 py-4 text-white transition-all hover:bg-black
+  .btn_dark_yellow {
+    @apply border-yellow-90 px-8 py-4  text-white transition-all hover:border-yellow-50;
   }
-  .btn_dark_yellow_outline  { 
-    @apply border-gray-20 bg-yellow-90 px-8 py-5 text-white
+  .btn_dark_yellow_outline {
+    @apply border-gray-20 bg-yellow-90 px-8 py-5 text-white;
   }
-  
+
   .max-container {
     @apply mx-auto max-w-[1440px];
   }
 
   .padding-container {
-    @apply px-6 lg:px-20 3xl:px-0;
+    @apply px-6 lg:px-20 3xl:px-0 3xl:flex;
   }
 
   .flexCenter {

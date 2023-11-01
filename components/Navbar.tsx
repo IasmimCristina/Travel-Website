@@ -1,12 +1,14 @@
 import { NAV_LINKS } from "@/constants"
 import Link from "next/link"
+import Button from "./Button"
+import Image from "next/image"
 
 
 const Navbar = () => {
   return (
-    <nav className="   padding-container  relative z-30 py-5  bg-blue-70">
+    <nav className="  padding-container   relative z-30 py-5  bg-blue-70  ">
 
-      <div className="flexBetween max-container ">
+      <div className=" flexBetween max-container ">
         <Link href={"/"} >
           <p className="text-2xl font-semibold text-slate-100">
 
@@ -24,9 +26,12 @@ const Navbar = () => {
         </ul>
 
         <div className="lg:flexCenter hidden">
-          <button>CLIQUE AQUI</button>
+          <Button icon="user.svg" type="button" title="Entrar" variant="btn_dark_yellow" />
         </div>
       </div>
+
+      <Image src={"/menu.svg"} alt="Menu" width={32} height={32} className="inline-block cursor-pointer lg:hidden" />
+
 
     </nav>
   )
