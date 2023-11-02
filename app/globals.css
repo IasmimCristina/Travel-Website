@@ -14,6 +14,29 @@ body {
   font-family: Inter;
 }
 
+/* START: burger menu */
+
+/* Adicione esta classe de animação personalizada em seu arquivo CSS ou em seu arquivo .module.css se estiver usando CSS Modules */
+/* Adicione esta classe de animação personalizada em seu arquivo CSS ou em seu arquivo .module.css se estiver usando CSS Modules */
+.slide-in {
+  animation-name: slideInRight;
+  animation-duration: 0.5s;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%); /* Começa fora da tela à direita */
+  }
+  to {
+    transform: translateX(0); /* Termina na posição normal (0% é a posição padrão) */
+  }
+}
+
+
+
+/* END: burger menu */
+
+
 @layer utilities {
   .btn_white {
     @apply border-white bg-white px-8 py-3 text-yellow-50;
@@ -44,7 +67,7 @@ body {
   }
 
   .flexBetween {
-    @apply flex items-center justify-between;
+    @apply flex items-center w-full justify-between;
   }
 
   .flexStart {
