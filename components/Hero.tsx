@@ -13,10 +13,10 @@ const Hero = () => {
 
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
 
-        <Image src={"/camp.svg"} alt='Acampamento' width={50} height={50} className='absolute left=[-5px] top-[-30px] w-10 lg:w-[50px]' />
-        <h1 className='bold-52 lg:bold-88'>Ponto de Acampamento Horizontes</h1>
-        <p className='regular-16 mt-6 text-gray-30 xl:max-w-[520px]'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea tempora sint repellat quidem cupiditate magni expedita molestias laborum rerum impedit totam, similique cum et tenetur hic aperiam consequatur? Esse, ad.
+        <Image src={"/camp.svg"} alt='Acampamento' width={50} height={50} className='absolute left=[-5px] top-[-35px] w-10 lg:w-[50px] ' />
+        <h1 className='bold-52 lg:bold-88 w-[60%]'>Ponto de Acampamento Horizontes</h1>
+        <p className='regular-16 mt-6 text-gray-600 xl:max-w-[520px]'>
+        O Ponto de Acampamento Horizontes é o seu refúgio perfeito para aventuras ao ar livre. Neste cenário paradisíaco, você poderá se reconectar com a natureza e desfrutar de momentos memoráveis, tudo isso em um ambiente de tranquilidade e beleza sem igual! 
         </p>
 
 
@@ -47,6 +47,12 @@ const Hero = () => {
             type='button'  />
         </div>
       </div>
+
+
+
+
+
+
     </section>
   )
 }
