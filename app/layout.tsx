@@ -23,7 +23,7 @@ export default function RootLayout({
         <Navbar />
 
 
-        <main className='relative overflow-hidden  '>
+        <main className='relative overflow-hidden max-container '>
           {children}
 
         </main>

@@ -14,27 +14,37 @@ body {
   font-family: Inter;
 }
 
-/* START: burger menu */
+/* START: scroll bar customization */
+/* Estilos da barra de rolagem */
 
-/* Adicione esta classe de animação personalizada em seu arquivo CSS ou em seu arquivo .module.css se estiver usando CSS Modules */
-/* Adicione esta classe de animação personalizada em seu arquivo CSS ou em seu arquivo .module.css se estiver usando CSS Modules */
-.slide-in {
-  animation-name: slideInRight;
-  animation-duration: 0.5s;
+/* Esconde a barra de rolagem nativa do navegador */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-@keyframes slideInRight {
-  from {
-    transform: translateX(100%); /* Começa fora da tela à direita */
-  }
-  to {
-    transform: translateX(
-      0
-    ); /* Termina na posição normal (0% é a posição padrão) */
-  }
+/* Estilo da "thumb" (a parte que você pode arrastar) */
+::-webkit-scrollbar-thumb {
+  background-color: #FFE167; /* Cor da thumb */
+  border-radius: 6px; /* Borda arredondada */
+  border: solid 2px   #02182B ;
 }
 
-/* END: burger menu */
+/* Estilo da "thumb" quando hover (opcional) */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffec9e; /* Cor da thumb ao passar o mouse */
+}
+
+/* Estilo da "track" (a parte da barra de rolagem que não é a thumb) */
+::-webkit-scrollbar-track {
+  background-color: #02182B; /* Cor da track */
+}
+
+/* Estilo da "track" quando hover (opcional) */
+::-webkit-scrollbar-track:hover {
+  
+}
+
+/* END: scroll bar customization */
 
 @layer utilities {
   .btn_white {

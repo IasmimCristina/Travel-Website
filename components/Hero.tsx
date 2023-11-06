@@ -14,8 +14,8 @@ const Hero = () => {
       <div className="relative z-20 flex flex-1 flex-col xl:w-1/2">
 
         <Image src={"/camp.svg"} alt='Acampamento' width={50} height={50} className='absolute left=[-5px] top-[-35px] w-10 lg:w-[50px] ' />
-        <h1 className='bold-52 lg:bold-88 w-[60%]'>Ponto de Acampamento Horizontes</h1>
-        <p className='regular-16 mt-6 text-gray-600 xl:max-w-[520px]'>
+        <h1 className='bold-52 lg:bold-88 lg:w-[60%]'>Ponto de Acampamento Horizontes</h1>
+        <p className='regular-16 mt-6 text-gray-600 xl:max-w-[520px] md:max-w-[820px]'>
           O Ponto de Acampamento Horizontes é o seu refúgio perfeito para aventuras ao ar livre. Neste cenário paradisíaco, você poderá se reconectar com a natureza e desfrutar de momentos memoráveis, tudo isso em um ambiente de tranquilidade e beleza sem igual!
         </p>
 
@@ -52,7 +52,7 @@ const Hero = () => {
 
 
       <div className="relative flex flex-1 items-start  ">
-        <div className="relative z-20 w-[268px] flex flex-col gap-8 rounded-3xl bg-blue-70 px-7 py-8">
+        <div className="relative z-20 w-[268px] flex flex-col gap-8 rounded-3xl bg-blue-70 px-7 py-8 border-4 border-yellow-50">
 
 
           <div className="flex flex-col">
