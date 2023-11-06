@@ -4,7 +4,7 @@ import Button from './Button'
 
 const Hero = () => {
   return (
-    <section className='border-2 border-red-50 flex flex-col gap-20 py-10 px-5 pb-32 md:gap-28 lg:py-20 xl:flex-row'>
+    <section className=' flex flex-col gap-20 py-10 px-5 pb-32 md:gap-28 lg:py-20 xl:flex-row'>
 
 
       <div className="hero-map" />
@@ -16,7 +16,7 @@ const Hero = () => {
         <Image src={"/camp.svg"} alt='Acampamento' width={50} height={50} className='absolute left=[-5px] top-[-35px] w-10 lg:w-[50px] ' />
         <h1 className='bold-52 lg:bold-88 w-[60%]'>Ponto de Acampamento Horizontes</h1>
         <p className='regular-16 mt-6 text-gray-600 xl:max-w-[520px]'>
-        O Ponto de Acampamento Horizontes é o seu refúgio perfeito para aventuras ao ar livre. Neste cenário paradisíaco, você poderá se reconectar com a natureza e desfrutar de momentos memoráveis, tudo isso em um ambiente de tranquilidade e beleza sem igual! 
+          O Ponto de Acampamento Horizontes é o seu refúgio perfeito para aventuras ao ar livre. Neste cenário paradisíaco, você poderá se reconectar com a natureza e desfrutar de momentos memoráveis, tudo isso em um ambiente de tranquilidade e beleza sem igual!
         </p>
 
 
@@ -37,21 +37,48 @@ const Hero = () => {
 
         <div className="flex  flex-col w-full gap-3 sm:flex-row">
           <Button
-           variant='btn_yellow'
-            title='Instale o App' 
-            type='button'  />
-             <Button
-           variant='btn_white_text'
-            title='Como trabalhamos?' 
+            variant='btn_yellow'
+            title='Instale o App'
+            type='button' />
+          <Button
+            variant='btn_white_text'
+            title='Como trabalhamos?'
             icon='/play.svg'
-            type='button'  />
+            type='button' />
         </div>
       </div>
 
 
 
 
+      <div className="relative flex flex-1 items-start  ">
+        <div className="relative z-20 w-[268px] flex flex-col gap-8 rounded-3xl bg-blue-70 px-7 py-8">
 
+
+          <div className="flex flex-col">
+            <div className="flexBetween">
+
+              <p className='regular-16 text-yellow-50'>Localização</p>
+
+              <Image src={'/close.svg'} alt='Fechar' width={24} height={24} className='cursor-pointer' />
+            </div>
+            <p className='bold-20 text-white'>Águas Frescas</p>
+          </div>
+          <div className="flexBetween">
+
+            <div className="flex flex-col">
+              <p className='regular-16 block text-yellow-50'>Distância</p>
+              <p className='bold-20 text-white'>12.85 Km</p>
+            </div>
+            <div className="flex flex-col">
+              <p className='regular-16 block text-yellow-50'>Elevação</p>
+              <p className='bold-20 text-white'>4.441 Km</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
 
     </section>
   )
