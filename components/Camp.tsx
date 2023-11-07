@@ -49,7 +49,7 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
 
 const Camp = () => {
   return (
-    <section className='border-2 border-green-400 2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20'>
+    <section className='2xl:max-container relative flex flex-col py-10 lg:mb-10 lg:py-20 xl:mb-20'>
 
 
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]">
@@ -81,7 +81,7 @@ const Camp = () => {
             Explore o mundo natural como nunca antes com o <strong>FériasIndo</strong>. Descubra trilhas incríveis, acampamentos deslumbrantes e aventuras emocionantes. Junte-se a nós e comece a sua jornada hoje!
           </p>
 
-          <Image  src={"/quote.svg"} alt='Acampamento 2' width={186} height={219} className='camp-quote' />
+          <Image src={"/quote.svg"} alt='Acampamento 2' width={186} height={219} className='camp-quote' />
 
         </div>
 
