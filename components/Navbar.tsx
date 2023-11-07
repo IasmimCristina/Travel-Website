@@ -13,7 +13,7 @@ const Navbar = () => {
 
 
   return (
-    <nav className="  padding-container   relative z-30 py-5  bg-blue-70  ">
+    <nav className="  padding-container   relative z-30 py-3  bg-blue-70  ">
 
       <div className=" flexBetween max-container  ">
         <Link href={"/"} >
