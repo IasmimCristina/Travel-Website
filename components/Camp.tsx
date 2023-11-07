@@ -1,3 +1,4 @@
+import { PEOPLE_URL } from '@/constants'
 import Image from 'next/image'
 import React from 'react'
 
@@ -29,6 +30,17 @@ const CampSite = ({ backgroundImage, title, subtitle, peopleJoined }: CampProps)
 
         </div>
 
+        <div className="flexCenter gap-6">
+          <span className="flex -space-x-4 overflow-hidden">
+
+            {PEOPLE_URL.map((url) => (
+              <Image className='inline-block h-10 w-10 rounded-full' src={url} key={url} alt='Pessoa' height={52} width={52} />
+            ))}
+          </span>
+
+          <p className='bold-16 md:bold-20 text-yellow-50'>{peopleJoined}</p>
+        </div>
+
       </div>
     </div>
 
@@ -48,7 +60,30 @@ const Camp = () => {
           peopleJoined="80+ pessoas"
 
         />
-        <CampSite />
+        <CampSite
+
+          backgroundImage="bg-bg-img-2"
+          title="Montanha Vista Nova"
+          subtitle="Selva Tuji, Baía Clara"
+          peopleJoined="60+ pessoas"
+
+        />
+
+      </div>
+
+      <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-6">
+        <div className="bg-blue-70 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl">
+
+
+          <h2 className='regular-24 md:regular-32 2xl:regular-64 text-white capitalize'>   <strong>Sem direção?</strong> Não consegue encontrar seu caminho? </h2>
+
+          <p className="regular-14 xl:regular-16 mt-5 text-yellow-50">
+            Explore o mundo natural como nunca antes com o <strong>FériasIndo</strong>. Descubra trilhas incríveis, acampamentos deslumbrantes e aventuras emocionantes. Junte-se a nós e comece a sua jornada hoje!
+          </p>
+
+          <Image  src={"/quote.svg"} alt='Acampamento 2' width={186} height={219} className='camp-quote' />
+
+        </div>
 
       </div>
     </section>
