@@ -52,9 +52,9 @@ const Guide = () => {
             <div className="flex w-full flex-col">
 
               <p className='regular-16 text-gray-20'>Começar trilha</p>
-              <h4>Wonders Rest</h4>
+              <h4 className='bold-20 mt-2'>Wonders Rest</h4>
 
-              <p className='bold-20 mt-2'></p>
+
             </div>
           </div>
         </div>

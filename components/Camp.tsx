@@ -75,7 +75,7 @@ const Camp = () => {
         <div className="bg-blue-70 p-8 lg:max-w-[500px] xl:max-w-[734px] xl:rounded-5xl xl:px-16 xl:py-20 relative w-full overflow-hidden rounded-3xl">
 
 
-          <h2 className='regular-24 md:regular-32 2xl:regular-64 text-white capitalize'>   <strong>Sem direção?</strong> Não consegue encontrar seu caminho? </h2>
+          <h2 className='regular-24 md:regular-32 2xl:regular-64 text-white capitalize'>   <strong>Sem direção?</strong> Sem conseguir encontrar seu caminho? </h2>
 
           <p className="regular-14 xl:regular-16 mt-5 text-yellow-50">
             Explore o mundo natural como nunca antes com o <strong>FériasIndo</strong>. Descubra trilhas incríveis, acampamentos deslumbrantes e aventuras emocionantes. Junte-se a nós e comece a sua jornada hoje!
